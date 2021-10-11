@@ -4,12 +4,13 @@
 
 This repository contains a sample set of code to simplify learning how to run the [caf-enterprise-scale]() module.
 
-The deployment is broken into 4 stages:
+The deployment is broken into 5 stages:
 
-1. Deploy the core Management Group hierarchy, including Policies and Access control (IAM) for governance. Includes an additional `example` Management Group under `landing-zones`.
-2. Add the `corp`, `online` and `sap` Management Groups with corresponding Policies and Access control (IAM) settings.
-3. Enable deployment of the management resources.
-4. Enable deployment of the connectivity resources.
+1. Deploy the core Management Group hierarchy, including Policies and Access control (IAM) for governance.
+2. Add the built-in `corp`, `online` and `sap` Management Groups with corresponding Policies and Access control (IAM) settings.
+3. Add an additional custom `example` Management Group under `landing-zones`.
+4. Enable deployment of the management resources.
+5. Enable deployment of the connectivity resources.
 
 This tutorial can be deployed using 1-3 Subscriptions depending on your preference. This is controlled by specifying values for the `subscription_id_management` and `subscription_id_connectivity` input variables.
 
