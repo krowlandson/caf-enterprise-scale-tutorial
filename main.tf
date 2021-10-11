@@ -1,6 +1,6 @@
 module "enterprise_scale" {
   source  = "Azure/caf-enterprise-scale/azurerm"
-  version = "~> 0.4.0"
+  version = "~> 1.0.0"
 
   providers = {
     azurerm              = azurerm
@@ -21,7 +21,7 @@ module "enterprise_scale" {
   deploy_sap_landing_zones    = local.deploy_sap_landing_zones
 
   # Define an additional "example" Management Group.
-  custom_landing_zones = {
+  custom_landing_zones = local.deploy_custom_landing_zones ? {
     "${local.root_id}-example" = {
       display_name               = "Example"
       parent_management_group_id = "${local.root_id}-landing-zones"
@@ -32,7 +32,7 @@ module "enterprise_scale" {
         access_control = {}
       }
     }
-  }
+  } : {}
 
   # Configuration settings for management resources.
   # These are used to ensure Azure Policy is correctly

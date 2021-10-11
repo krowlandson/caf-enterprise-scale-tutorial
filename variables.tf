@@ -40,19 +40,25 @@ variable "default_location" {
 variable "deploy_corp_landing_zones" {
   type        = bool
   default     = false
-  description = "If set to true, will deploy the \"Corp\" landing zones in addition to any core and custom landing zones."
+  description = "If set to true, will deploy the built-in \"Corp\" landing zones in addition to any core and custom landing zones."
 }
 
 variable "deploy_online_landing_zones" {
   type        = bool
   default     = false
-  description = "If set to true, will deploy the \"Online\" landing zones in addition to any core and custom landing zones."
+  description = "If set to true, will deploy the built-in \"Online\" landing zones in addition to any core and custom landing zones."
 }
 
 variable "deploy_sap_landing_zones" {
   type        = bool
   default     = false
-  description = "If set to true, will deploy the \"SAP\" landing zones in addition to any core and custom landing zones."
+  description = "If set to true, will deploy the built-in \"SAP\" landing zones in addition to any core and custom landing zones."
+}
+
+variable "deploy_custom_landing_zones" {
+  type        = bool
+  default     = false
+  description = "If set to true, will deploy the custom \"Example\" landing zones in addition to any core and custom landing zones."
 }
 
 variable "deploy_management_resources" {

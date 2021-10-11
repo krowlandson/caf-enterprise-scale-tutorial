@@ -4,6 +4,7 @@ default_location               = "eastus"
 deploy_corp_landing_zones      = false
 deploy_online_landing_zones    = false
 deploy_sap_landing_zones       = false
+deploy_custom_landing_zones    = false
 deploy_management_resources    = false
 deploy_connectivity_resources  = false
 security_contact_email_address = "security.contact@replace_me"

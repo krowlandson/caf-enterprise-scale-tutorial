@@ -8,6 +8,7 @@ locals {
   deploy_corp_landing_zones      = var.deploy_corp_landing_zones
   deploy_online_landing_zones    = var.deploy_online_landing_zones
   deploy_sap_landing_zones       = var.deploy_sap_landing_zones
+  deploy_custom_landing_zones    = var.deploy_custom_landing_zones
   deploy_management_resources    = var.deploy_management_resources
   deploy_connectivity_resources  = var.deploy_connectivity_resources
   security_contact_email_address = var.security_contact_email_address
